@@ -1,0 +1,44 @@
+:root {
+    --bg-dark: #0a0e14;
+    --neon-blue: #00f2ff;
+    --base-a: #ff4d4d; /* Rouge */
+    --base-t: #4d79ff; /* Bleu */
+    --base-g: #ffcc00; /* Jaune */
+    --base-c: #00ff88; /* Vert */
+}
+
+body.lab-theme {
+    background-color: var(--bg-dark);
+    color: white;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.terminal {
+    border: 2px solid var(--neon-blue);
+    box-shadow: 0 0 15px var(--neon-blue);
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    width: 80%;
+}
+
+.base {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: black;
+}
+
+.base-A { background-color: var(--base-a); }
+.base-T { background-color: var(--base-t); }
+.base-G { background-color: var(--base-g); }
+.base-C { background-color: var(--base-c); }
+.base-U { background-color: #ff00ff; } /* Uracile en violet */
+
+.error-msg { color: #ff4d4d; margin-top: 10px; }
